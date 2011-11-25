@@ -1,0 +1,31 @@
+Inspired by:
+    - http://sontek.net/turning-vim-into-a-modern-python-ide
+    - http://www.manuel-strehl.de/tips_and_tricks/vim_and_win_revised.en.html
+
+Building vim/gvim with ruby:
+    cygwin libraries needed:
+        - ncurses devel
+        - gtk2 devel
+        - xt devel
+        - xpm devel
+        - cairo devel
+        - xmu devel
+        - xorg macros, xorg config files
+        - pkg-config
+
+    configure command:
+        ./configure --prefix=<prefix> --with-features=huge --enable-gui=gtk2 --enable-rubyinterp
+
+todo:
+    vim:
+        - figure out the double minibufexplorer issue
+        - function for opening the current file in a new vim
+        - function for opening the current file in a new vert window and making vim bigger
+        - yankring
+        - put swp files in one place
+
+    to[g]vim:
+        - open with gvim / vim in shell
+        - focus on window after startup
+        - handle multiple instances
+
