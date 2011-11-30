@@ -1,18 +1,15 @@
-[submodule "bundle/ack"]
-	path = bundle/ack
-	url = https://github.com/mileszs/ack.vim.git
-[submodule "_vim/bundle/ack"]
-	path = _vim/bundle/ack
-	url = https://github.com/vim-scripts/ack.vim
 [submodule "_vim/bundle/fuzzyfinder"]
 	path = _vim/bundle/fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "_vim/bundle/l9"]
-	path = _vim/bundle/l9
-	url = https://github.com/vim-scripts/L9.git
 [submodule "_vim/bundle/bufexplorer"]
 	path = _vim/bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
 [submodule "_vim/bundle/taglist"]
 	path = _vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "_vim/bundle/visual_studio"]
+	path = _vim/bundle/visual_studio
+	url = https://github.com/jmnas/dotfiles.git
+[submodule "_vim/bundle/tcomment"]
+	path = _vim/bundle/tcomment
+	url = https://github.com/vim-scripts/tComment.git
