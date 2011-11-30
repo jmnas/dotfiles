@@ -13,3 +13,9 @@
 [submodule "_vim/bundle/tcomment"]
 	path = _vim/bundle/tcomment
 	url = https://github.com/vim-scripts/tComment.git
+[submodule "_vim/bundle/l9"]
+	path = _vim/bundle/l9
+	url = https://github.com/vim-scripts/L9.git
+[submodule "_vim/bundle/ack"]
+	path = _vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
