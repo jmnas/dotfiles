@@ -1,0 +1,11 @@
+Font=Bitstream Vera Sans Mono
+FontHeight=11
+CursorType=0
+Columns=120
+Rows=54
+CursorBlinks=0
+RightClickAction=1
+FontQuality=0
+Term=xterm-256color
+Transparency=0
+OpaqueWhenFocused=0

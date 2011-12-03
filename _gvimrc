@@ -1,0 +1,20 @@
+set guioptions-=m             " Remove menu bar 
+set guioptions-=T             " Remove toolbar 
+set vb t_vb=                  " No audio or verbal bell, this has to be here also
+
+set columns=120
+set lines=53
+
+" guifont, depends on platform
+if has('win32') || has('win64')
+    set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
+endif
+
+" use the cygwin shell on windows
+if has('win32') || has('win64')
+    set shell=C:/cygwin/bin/bash
+    set shellcmdflag=-c
+    set shellxquote=\"
+    set ssl
+endif
+

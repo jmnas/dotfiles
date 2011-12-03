@@ -1,0 +1,57 @@
+
+# general bash settings
+set -o notify
+set -o noclobber
+set -o ignoreeof
+set -o vi
+
+shopt -s cdspell
+shopt -s cdable_vars
+shopt -s checkhash
+shopt -s checkwinsize
+shopt -s sourcepath
+shopt -s no_empty_cmd_completion
+shopt -s cmdhist
+shopt -s histappend histreedit histverify
+export HISTCONTROL=erasedups
+shopt -s extglob 
+PROMPT_COMMAND='history -a'
+export PAGER=less
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ '
+
+# aliases
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias h='history'
+alias hgrep='history | grep '
+alias which='type -a'
+alias grep='grep --color'
+
+alias du='du -kh'
+alias df='df -kTh'
+
+# cygwin stuff
+alias wp='cygpath -w'
+
+function npp()
+{
+    files=''
+    for file in $*; do
+        files="$files `cygpath -w $file`"
+    done
+    $NPP $files
+}
+
+# windows gvim
+function wv()
+{
+    VIM=`cygpath -w /cygdrive/c/Vim` /cygdrive/c/Vim/vim73/gvim.exe `cygpath -w "$*"` &
+}
+
+# local (per-machine) configuration
+if [ -f "${HOME}/.bashrc.local" ]; then
+    source "${HOME}/.bashrc.local"
+fi
+
