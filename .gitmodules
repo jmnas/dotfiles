@@ -16,3 +16,6 @@
 [submodule "_vim/bundle/ack"]
 	path = _vim/bundle/ack
 	url = https://github.com/vim-scripts/ack.vim.git
+[submodule "_vim/bundle/visual_studio"]
+	path = _vim/bundle/visual_studio
+	url = https://github.com/jmnas/visual_studio.vim.git
