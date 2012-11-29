@@ -7,8 +7,10 @@ set lines=53
 
 " guifont, depends on platform
 if has('win32') || has('win64')
-    set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
+    set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
     set go+=a
+else
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
 endif
 
 " use the cygwin shell on windows
