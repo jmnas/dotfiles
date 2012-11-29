@@ -21,6 +21,11 @@ map <leader>w :w<CR>
 nmap <leader>c :copen<CR>
 nmap <leader>cc :cclose<CR>"
 
+" cd to directory of current file
+map <leader>h :cd %:h<CR>
+map <leader>.. :cd ..<CR>
+
+
 " navigation
 " nnoremap <c-j> 5j
 " nnoremap <c-k> 5k
@@ -50,6 +55,14 @@ nnoremap <Leader>7 :b7<CR>
 nnoremap <Leader>8 :b8<CR>
 nnoremap <Leader>9 :b9<CR>
 nnoremap <Leader>0 :b10<CR>
+map <leader>e :BufExplorer<CR>
+
+" fuzzy finder
+map <leader>f :FufBuffer<CR>
+map <leader>gf :call fuf#givenfile#launch('', 0, '>', readfile('sourcefiles'))<CR>
+
+" .h -> .cpp
+map <leader>a :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " visual mode
 " / searches for selection
@@ -121,8 +134,22 @@ set smartcase               " unless uppercase letters are used in the regex.
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
 
+""" Status line
+set laststatus=2
+set statusline=%t\ %y\ format:\ %{&ff};\ [%c,%l]
+
 " Stuff that may vary
 set t_Co=256
 colorscheme peaksea
+" wrap text in the quickfix window
+autocmd FileType qf setlocal wrap
 
-let g:miniBufExplorerMoreThanOne=0
+" ctags/taglist
+map <leader>rr :TlistToggle<CR>
+let Tlist_WinWidth=50
+:nmap <leader>rf :!(cd %:p:h;ctags *.[ch])&<CR>
+let Tlist_Show_One_File=1
+
+" visual studio
+map <C-F7> :call DTEPutFile()<CR>
+
