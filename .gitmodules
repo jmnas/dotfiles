@@ -9,7 +9,7 @@
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "_vim/bundle/tcomment"]
 	path = _vim/bundle/tcomment
-	url = https://github.com/vim-scripts/tComment.git
+	url = https://github.com/tomtom/tcomment_vim.git
 [submodule "_vim/bundle/l9"]
 	path = _vim/bundle/l9
 	url = https://github.com/vim-scripts/L9.git
