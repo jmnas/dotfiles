@@ -4,3 +4,6 @@
 _vim/bundle/command-t/ruby/command-t/Makefile
 _vim/bundle/**/tags
 _vim/.netrwhist
+_xmonad/xmonad.hi
+_xmonad/xmonad.errors
+_xmonad/xmonad-i386-linux
