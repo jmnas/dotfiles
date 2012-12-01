@@ -1,0 +1,12 @@
+[user]
+	name = Jim Naslund
+	email = jnaslund@gmail.com
+[diff]
+	tool = bc3
+[difftool]
+    prompt = false
+[difftool "bc3"]
+	cmd = bcompare $LOCAL $REMOTE
+[alias]
+    incoming = log master..origin/master
+    outgoing = log origin/master..master
