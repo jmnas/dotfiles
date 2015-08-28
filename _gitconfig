@@ -1,12 +1,19 @@
 [user]
 	name = Jim Naslund
 	email = jnaslund@gmail.com
-[diff]
-	tool = bc3
-[difftool]
-    prompt = false
-[difftool "bc3"]
-	cmd = bcompare $LOCAL $REMOTE
+[color]
+    ui = true
+    interactive = auto
+    pager = true
 [alias]
-    incoming = log master..origin/master
-    outgoing = log origin/master..master
+    vdiff = difftool --dir-diff
+    lol = log --oneline --decorate --graph
+    st = status -s
+    ss = rev-parse --short
+    files-changed = diff-tree --no-commit-id --name-only -r
+[core]
+    excludesFiles = ~/.gitignore
+[diff]
+	tool = vimdiff
+[difftool]
+    prompt = vimdiff
