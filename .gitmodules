@@ -30,3 +30,6 @@
 	path = _oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
     ignore = untracked
+[submodule "_vim/bundle/fugitive"]
+	path = _vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
