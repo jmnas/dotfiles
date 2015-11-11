@@ -33,3 +33,9 @@
 [submodule "_vim/bundle/fugitive"]
 	path = _vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "_vim/bundle/javascript"]
+	path = _vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "_vim/bundle/jsx"]
+	path = _vim/bundle/jsx
+	url = https://github.com/mxw/vim-jsx.git
