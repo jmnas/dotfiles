@@ -75,9 +75,9 @@ vmap < <gv
 " Load plugins with Pathogen
 " ==========================================================
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-filetype on
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " ==========================================================
 " Settings
