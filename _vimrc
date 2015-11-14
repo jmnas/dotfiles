@@ -57,9 +57,12 @@ nnoremap <Leader>9 :b9<CR>
 nnoremap <Leader>0 :b10<CR>
 map <leader>e :BufExplorer<CR>
 
-" fuzzy finder
-map <leader>f :FufBuffer<CR>
-map <leader>gf :call fuf#givenfile#launch('', 0, '>', readfile('sourcefiles'))<CR>
+" CtrlP
+map <leader>f :CtrlPBuffer<CR>
+map <leader>gf :CtrlP<CR>
+let g:ctrlp_match_window = 'top'
+" ignore using gitignore
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " .h -> .cpp
 map <leader>a :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
