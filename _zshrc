@@ -42,3 +42,6 @@ setopt NO_LIST_BEEP
 
 setopt extendedglob
 bindkey '^r' history-incremental-search-backward
+
+export PATH=$HOME/bin:$PATH
+
