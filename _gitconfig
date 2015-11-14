@@ -12,7 +12,7 @@
     ss = rev-parse --short
     files-changed = diff-tree --no-commit-id --name-only -r
 [core]
-    excludesFiles = ~/.gitignore
+    excludesfile = ~/.gitignore
 [diff]
 	tool = vimdiff
 [difftool]
