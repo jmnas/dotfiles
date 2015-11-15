@@ -156,3 +156,5 @@ let Tlist_Show_One_File=1
 " visual studio
 map <C-F7> :call DTEPutFile()<CR>
 
+" markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
